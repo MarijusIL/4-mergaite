@@ -1,3 +1,7 @@
+body {
+    background-color: #fff;
+}
+
 header {
     display: inline-block;
     width: 800px;
