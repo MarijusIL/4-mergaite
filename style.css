@@ -1,18 +1,36 @@
 body {
-    background-color: #fff;
+    background-color: #F8F8F8;
     margin: 0;
+    display: grid;
+    grid-template-areas: "empty header header empty"
+                         "empty empty empty empty"
+                         "empty text picture empty"
+                         "empty text picture empty"
+                         "empty text picture empty"
+                         "empty empty empty empty";
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+
 }
 
 header {
     display: inline-block;
-    width: 800px;
-    margin-left: calc(50% - 400px);
+    /* width: 800px;
+    margin-left: calc(50% - 400px); */
+    grid-area: header;
 }
 
 
-main {
+/* main {
   display: inline-block;
   width: 800px;
   margin-left: calc(50% - 400px);
-  background-color: brown;
+} */
+
+.missing-texts {
+  grid-area: text;
+}
+
+.missing-image {
+  grid-area: picture;
 }
